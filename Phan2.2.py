@@ -5,7 +5,7 @@ import seaborn as sns
 #trong đây t draft thôi, hiện chỉ có biến purchase amount
 #mng tạo file làm theo phân công rồi commit push lên nha
 
-file='D:\DATASET\Fashion_Retail_Sales.xlsx'
+file=r'D:\DATASET\Fashion_Retail_Sales.xlsx'
 df = pd.read_excel (file)
 # Thống kê mô tả cho cột Purchase Amount
 print(df['Purchase Amount (USD)'].describe())
@@ -61,4 +61,3 @@ plt.title("Histogram of Log Transformed Purchase Amount")
 plt.xlabel("Log(Purchase Amount)")
 plt.ylabel("Frequency")
 plt.show()
-
